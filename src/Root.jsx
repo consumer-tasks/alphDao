@@ -1,4 +1,3 @@
-/* eslint-disable global-require */
 import { Component } from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter, HashRouter } from 'react-router-dom';
@@ -16,7 +15,7 @@ export default class Root extends Component {
     return (
       <Web3ContextProvider>
         <Provider store={store}>
-          <HashRouter>
+          <HashRouter basename={''}>
             <App />
           </HashRouter>
         </Provider>
